@@ -1545,6 +1545,8 @@
     <script src="app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
     <!-- END: Page JS-->
 
+    <script src="hello.js"></script>
+
     <script>
         $(window).on('load', function() {
             if (feather) {
@@ -1554,6 +1556,11 @@
                 });
             }
         })
+    </script>
+
+    <script type="module">
+        import { hello } from './hello.js'; // Or it could be simply `hello.js`
+        hello();
     </script>
 </body>
 <!-- END: Body-->
