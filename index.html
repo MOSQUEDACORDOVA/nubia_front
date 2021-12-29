@@ -830,9 +830,14 @@
     <script src="app-assets/js/scripts/ui/ui-feather.js"></script>
     <!-- END: Page JS-->
 
+<<<<<<< HEAD
     <!-- BEGIN: Page JS-->
     <script src="app-assets/js/scripts/tables/table-datatables-basic.js"></script>
     <!-- END: Page JS-->
+=======
+    <script src="hello.js"></script>
+
+>>>>>>> 8e55b57110f7b49382f4311e4f351f60590939c6
     <script>
         $(window).on('load', function() {
             if (feather) {
@@ -842,6 +847,11 @@
                 });
             }
         })
+    </script>
+
+    <script type="module">
+        import { hello } from './hello.js'; // Or it could be simply `hello.js`
+        hello();
     </script>
 </body>
 <!-- END: Body-->
